@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="Naamloos.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style-index.css" rel="stylesheet"/>
+    <title>FotografieFeline</title>
+  </head>
+  <body>
+
+    <div  class="top-container">
+      <image width="100%" src="./img/achtergrond.PNG"></image>
+    </div>
+  <div class="header" id="myHeader">
+    <div class="headertext" style="display:flex">
+      <img src="./Naamloos.ico" width="40" height="40" style="margin-right: 5px;">
+      <h1>fotografieFeline</h1>
+    </div>
+    <div>
+      <button class="tablink" onclick="openPage('Home', this, '#5c1111')" id="defaultOpen">Home</button>
+      <button class="tablink" onclick="openPage('Shop', this, '#5c1111')">Shop</button>
+      <button class="tablink" onclick="openPage('Aboutme', this, '#5c1111')">About me</button>
+      <button class="tablink" onclick="openPage('Contact', this, '#5c1111')">Contact</button>
+    </div>
+  </div>
+
+
+
+    <!--home pagina-->
+    <div id="Home" class="tabcontent">
+      <h2>Welcome to my website. Go ahead and take a look around.</h2>
+        <div class="ruimte">
+        </div>
+        <div class="h3_1">
+      <h3>I take nature photo's and some portraits, as well as some more artistic ones, as you can see at the top of the page.</h3>
+      <h3>You can also hire me if you want specific pictures taken at an event or somewhere else. If you're interested, you can find my details at Contact.</h3>
+        </div>
+        <div class="ruimte">
+        </div>
+        <div class="homepicture">
+          <img src="./img/home/path.JPG" width="30%">
+          <div class="p1frontpage">
+          <h3>One of my favorite pictures I took once in autumn.</h3>
+          <h3>I still can't get over the fact how crazy green it was.</h3>
+          </div>
+        </div>
+        <div class="ruimte">
+        </div>
+        <div class="hometext">
+          <div class="p2frontpage">
+            <h3>You may ... my quote as you like. Some may say that it's about love, some that it's about science.</h3>
+            <h3>But for me it is just like art, everyone gets a difrent feeling.</h3>
+          </div>
+          <img src="./img/home/JustChemistry.jpg" width="30%">
+        </div>
+        <div class="ruimte">
+        </div>
+
+        <div class="h3_2">
+          <h3>Some of my previous work</h3>
+        </div>
+        <div class="previouswork">
+          <h3>'4de jaars gala' juli 2022</h3>
+        </div>
+        <div class="previouswork">
+          <h3>Fotoshoot april 2022</h3>
+        </div>
+
+    </div>
+    
+    <!--Shop pagina-->
+    <div id="Shop" class="tabcontent">
+
+
+      <!--Little Red Poppy-->
+      <div class="accordion" id="accordion1">
+        <button onclick="makeBig('div1', 'accordion1')" type="button" class="accordion__button">
+          <img src="./img/shop/LittleRedPoppy.jpeg" height="200" id="div1">
+        </button>
+          <div class="accordion__content">
+            <h4>Little Red Poppy</h4>
+            <p>
+              Je kunt deze foto uit laten printen op canvas. Perfect voor aan de muur.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis veritatis recusandae libero corrupti ea ab fuga sint nihil sapiente ullam laudantium incidunt perspiciatis 
+              nisi natus, quisquam consectetur, modi, reiciendis sit!
+            </p>
+          </div>
+      </div>
+
+      <!--Autumn Mushroom-->
+      <div class="accordion" id="accordion2">
+        <button onclick="makeBig('div2', 'accordion2')" type="button" class="accordion__button">
+          <img src="./img/shop/AutumnMushroom.jpeg" height="200"  id="div2">
+        </button>
+        <div class="accordion__content">
+          <h4>Autumn Mushroom</h4>
+          <p>
+            Je kunt deze foto uit laten printen op canvas. Perfect voor aan de muur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis veritatis recusandae libero corrupti ea ab fuga sint nihil sapiente ullam laudantium incidunt perspiciatis 
+            nisi natus, quisquam consectetur, modi, reiciendis sit!
+          </p>
+        </div>
+      </div>
+              
+      <!--Flower in the light-->
+      <div class="accordion" id="accordion3">
+        <button onclick="makeBig('div3', 'accordion3')" type="button" class="accordion__button">
+          <img src="./img/shop/Flowerinthelight.jpeg" height="200"  id="div3">
+        </button>
+        <div class="accordion__contenthorizontal">
+          <h4>Flower in the light</h4>
+          <p>
+            Je kunt deze foto uit laten printen op canvas. Perfect voor aan de muur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis veritatis recusandae libero corrupti ea ab fuga sint nihil sapiente ullam laudantium incidunt perspiciatis 
+            nisi natus, quisquam consectetur, modi, reiciendis sit!
+          </p>
+          <div class="canvasimg">
+            <a href="./Flowerinthelight.html" target="_blank">
+              <img src="./img/shop/canvasflowerinthelight.PNG" height="100">
+            </a>
+          </div>
+        </div>
+      </div>
+
+<script>
+
+var clicked = 0;
+
+function makeBig(whichdiv, whichaccordion){
+  if (clicked === 0) {
+    var element = document.getElementById(whichdiv);
+    element.classList.add("mystyle");
+    element = document.getElementById(whichaccordion);
+    element.classList.add("mystyleaccordion");
+    element = document.getElementById(whichaccordion);
+    element.classList.remove("accordion__button");
+    //var element = document.getElementById(whichdiv);
+    //element.classList.close("accordion__button--active");
+    this.clicked = 1;
+  } else {
+    var element = document.getElementById(whichdiv);
+    element.classList.remove("mystyle");
+    element = document.getElementById(whichaccordion);
+    element.classList.remove("mystyleaccordion");
+    element = document.getElementById(whichaccordion);
+    element.classList.add("accordion__button");
+    this.clicked = 0;
+  }
+
+}
+  document.querySelectorAll('.accordion__button').forEach(button =>{
+    button.addEventListener('click', () => {    
+      button.classList.toggle('accordion__button--active');
+    });
+  });
+</script>
+</div>
+            
+      <!---about me pagina-->
+      <div id="Aboutme" class="tabcontent">
+        <div class="ruimte">
+        </div>
+        <div class="h3">
+          <h3>Hi! I'm Feline. I am 19 years old and one of my biggest hobbies is photografie.</h3>
+          <h3>For as long as I can remember I love to take pictures. Although I'm studying Chemistry right now, which I love, I always have had a dream of becoming a 
+              professional photographer. Or as I like to call it: ''een professionele reflectie snoeper''.</h3>
+        </div>
+        <div class="aboutpicture">
+          <img src="./img/aboutme/profilepic.JPG" width="30%">
+          <div class="p1aboutpage">
+          <h3>Here is a picture of me.</h3>
+          </div>
+        </div>
+        <div class="ruimte">
+        </div>
+        <div class="abouttext">
+          <div class="p2aboutpage">
+            <h3>l love animals.</h3>
+          </div>
+          <img src="./img/aboutme/metpaard1.jpg" height="350">
+          <img src="./img/aboutme/metpaard2.png" height="350" style="margin-left: 5%;">
+        </div>
+      </div>
+            
+      <!--Contact pagina-->
+      <div id="Contact" class="tabcontent">
+        <div class="contactgegevens">
+          <h3>Email: fotografie.feline21@gmail.com</h3>
+          <h3>Tel: 06 38458523</h3>
+          <h3>Location: Rotterdam, The Netherlands</h3>
+          <h3>Socials:</h3>
+          <h3 style="text-align: center;">instagram: <a href="https://www.instagram.com/fotografiefeline/" target="_blank" style="color: white;">@fotografiefeline</a></h3>
+        </div>
+
+      </div>
+
+            <script>
+            function openPage(pageName,elmnt,color) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablink");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+              }
+              document.getElementById(pageName).style.display = "block";
+              elmnt.style.backgroundColor = color;
+            }
+            
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+            </script>
+
+    </div>
+
+<footer>
+
+    <div class="butoninsta">
+      <a href="https://www.instagram.com/fotografiefeline/" target="_blank">
+        <img src="./img/insta logo.png" height="50">
+      </a>
+    </div>
+    <div class="Chemistrypicture">
+      <img src="./img/home/JustChemistry.jpg" height="50">
+    </div>
+
+</footer>
+    </body>
+</html>
+<script src="./header.js"></script>

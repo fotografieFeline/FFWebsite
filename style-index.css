@@ -1,0 +1,253 @@
+body{
+    background: inherit;
+    height:min-content;
+}
+footer{
+  padding: 2%;
+  background-color: #555;
+  background-position-y: bottom;
+}
+.top-container{
+  background-color: #630863c7;
+}
+h1{
+  color:white;
+}
+h2{
+  color: black;
+  text-align: center;
+  padding-top: 100px;
+}
+.h3_1{
+  padding:2%;
+  background-color: #510551;
+  margin: 0;
+}
+.h3_2{
+  padding:2%;
+  background-color: #510551;
+  margin: 0;
+  text-align: center;
+  color:black;
+}
+.previouswork{
+  background-color: #510551;
+  padding:2%;
+  text-align: left;
+  margin-top: 1%;
+  margin-left: 4%;
+  margin-right: 4%;
+  color:white;
+}
+h4{
+  color: black;
+  text-align: center;
+}
+p{
+  color:black;
+  text-align: left;
+  margin-left: 1%;
+  /*width: 50%;*/
+  margin-right: 50%;
+  float: left;
+}
+.p1frontpage{
+  float: right;
+  color: black;
+}
+.p2frontpage{
+  float: left;
+  color:white;
+  margin: 0% 12% 0% 2%;
+  width: 50%;
+}
+.p1aboutpage{
+  float: right;
+  color: black;
+}
+.p2aboutpage{
+  float: left;
+  color:white;
+  margin: 0% 0% 0% 2%;
+  width: 40%;
+}
+
+.ruimte{
+  padding:3%;
+}
+.homepicture{
+  padding: 3% 20% 3% 3%;
+  margin: 0% 20% 0% 0;
+  background-color: #510551;
+}
+.aboutpicture{
+  padding: 3% 30% 3% 3%;
+  margin: 2% 20% 0% 0;
+  background-color: #510551;
+}
+.hometext{
+  padding: 3%;
+  margin: 0% 0% 2% 20%;
+  background-color: #510551;
+}
+.abouttext{
+  padding: 3%;
+  margin: 0% 0% 2% 20%;
+  background-color: #510551;
+}
+.buttoninsta{
+  background-color: inherit;
+  border-radius: 50%;
+  float: right;
+}
+.Chemistrypicture{
+  background-color: inherit;
+}
+
+.canvasimg{
+  float: left;
+  /*display: inline-block;*/
+  margin: 1%;
+}
+
+.contactgegevens{
+  background-color: #510551;
+  color:white;
+  width: 30%;
+  text-align: left;
+  margin: 2%;
+  padding: 3%;
+}
+
+/*hieronder de 'scrolltop'*/
+.headertext {
+  padding: 10px 16px;
+  background: #630863c7;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 102px;
+}
+* {box-sizing: border-box}
+
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 0px 20px 100px;
+  height: 100%;
+  float: left;
+  width: 100%;
+}
+
+
+#Home {
+  background-color: #630863c7;
+  height: fit-content;
+}
+#Shop {
+  background-color: white;
+  height: fit-content;
+}
+#Aboutme {
+  background-color: #630863c7;
+  height: fit-content;
+}
+#Contact {
+  background-color: #630863c7;
+  height: fit-content;
+}
+
+.accordion__button{
+  display: blok;
+  width: auto;
+  padding: 1%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: inherit;
+  color: #ffffff;
+  text-align: left;
+  float:left;
+  transition: background 0.2s;
+}
+
+.accordion__button::after{
+  content: none;
+  float: right;
+  transform: scale(1.5);
+  appearance: zoom-in;
+}
+
+.accordion__button--active + .accordion__content { display: block }
+.accordion__button--active + .accordion__contenthorizontal { display: block }
+/*.accordion__button--active{ -o-animation-fill-mode: forwards; }*/
+/*.accordion__butoon--active::after{ content: '\25b4' }*/
+
+.accordion__content{
+  padding: 0 15px 0 0;
+  margin:1% 0;
+  font-family: sans-serif;
+  background: white;
+  border: 1px solid #777;
+  width: 60%;
+  float: left;
+  
+  display: none;
+  overflow: fill;
+}
+.accordion__contenthorizontal{
+  padding: 0 15px 0 0;
+  margin:1% 0;
+  font-family: sans-serif;
+  background: white;
+  border: 1px solid #777;
+  width: 50%;
+  float: left;
+  
+  display: none;
+  overflow: fill;
+}
+.mystyle {
+  height: 450px;
+  float:none;
+}
+.mystyleaccordion{
+  width: 100vw;
+  float:none;
+  display: inline-block;
+}

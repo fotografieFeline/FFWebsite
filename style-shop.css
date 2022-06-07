@@ -1,0 +1,23 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+}
+.headertext {
+    padding: 10px 16px;
+    background: #630863c7;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.picture{
+    background-color: inherit;
+    margin:5%;
+}
+.info{
+    background-color: white;
+    color:black;
+    width: 50%;
+    float: left;
+}
