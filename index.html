@@ -50,7 +50,7 @@
         </div>
         <div class="hometext">
           <div class="p2frontpage">
-            <h3>You may ... my quote as you like. Some may say that it's about love, some that it's about science.</h3>
+            <h3>You may interpret my quote as you like. Some may say that it's about love, some that it's about science.</h3>
             <h3>But for me it is just like art, everyone gets a difrent feeling.</h3>
           </div>
           <img src="./img/home/JustChemistry.jpg" width="30%">
@@ -132,20 +132,27 @@ function makeBig(whichdiv, whichaccordion){
   if (clicked === 0) {
     var element = document.getElementById(whichdiv);
     element.classList.add("mystyle");
-    element = document.getElementById(whichaccordion);
-    element.classList.add("mystyleaccordion");
-    element = document.getElementById(whichaccordion);
-    element.classList.remove("accordion__button");
-    //var element = document.getElementById(whichdiv);
-    //element.classList.close("accordion__button--active");
+
+    // var element2 = document.getElementsByClassName("mystyleaccordion")
+    // element2.classList.add("accordion__button");
+    // element2.classList.remove("mystyleaccordion");
+
+    var element3 = document.getElementById(whichaccordion);
+    element3.classList.add("mystyleaccordion");
+    element3.classList.remove("accordion__button");
+    
     this.clicked = 1;
   } else {
     var element = document.getElementById(whichdiv);
     element.classList.remove("mystyle");
-    element = document.getElementById(whichaccordion);
-    element.classList.remove("mystyleaccordion");
-    element = document.getElementById(whichaccordion);
-    element.classList.add("accordion__button");
+
+    // var element2 = document.getElementsByClassName("mystyleaccordion")
+    // element2.classList.add("accordion__button");
+    // element2.classList.remove("mystyleaccordion");
+
+    var element2 = document.getElementById(whichaccordion);
+    element2.classList.remove("mystyleaccordion");
+    element2.classList.add("accordion__button");
     this.clicked = 0;
   }
 
@@ -155,6 +162,25 @@ function makeBig(whichdiv, whichaccordion){
       button.classList.toggle('accordion__button--active');
     });
   });
+// function makeBig(whichdiv, whichaccordion){
+//   for (var i=1; i<4; i++){
+//     var x = "div" + i;
+//     if (whichdiv === x){
+//       var element = document.getElementById("div" + i)
+//       element.classList.add("mystyle");
+//       var element = document.getElementById("accordion" + i)
+//       element.classList.add("mystyleaccordion");
+//       element.classList.remove("accordion__button");
+//     } else {
+//       var element = document.getElementById("div" + i)
+//       element.classList.remove("mystyle");
+//       var element = document.getElementById("accordion" + i)
+//       element.classList.remove("mystyleaccordion");
+//       element.classList.add("accordion__button");
+//     }
+//   }
+// }
+
 </script>
 </div>
             
