@@ -113,7 +113,7 @@ p{
   background-color: inherit;
 }
 
-.canvasimg{
+.picture{
   float: left;
   /*display: inline-block;*/
   margin: 1%;
@@ -256,7 +256,7 @@ body, html {
   float:none;
 }
 .mystyleaccordion{
-  width: 100vw;
+  /*width: 100vw;*/
   float:none;
   display: inline-block;
 }
