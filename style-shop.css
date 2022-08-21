@@ -15,11 +15,17 @@ body, html {
     background-color: inherit;
     margin:2%;
     width: 22%;
+    margin-right: 10%;
 }
 .picturehor{
     background-color: inherit;
-    margin:5%;
+    margin:4%;
+    margin-right: 0%;
     width: 44%;
+}
+.title{
+    margin: 2%;
+    
 }
 
 .info{
@@ -28,6 +34,8 @@ body, html {
     width: 44%;
     float: left;
     padding: 5%;
+    padding-left: 0%;
+    margin-left: 0%;
 }
 
 .order__button{
@@ -40,8 +48,50 @@ body, html {
     padding:20px;
     margin-top: 10%;
     font-size: large;
+    cursor: pointer;
 }
 .order__button:hover{
     background-color: #510551;
     text-shadow: 2px 2px 2px black;
+}
+
+/* de informatie in accordions hieronder */
+.accordion {
+    background-color: #555555;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+.accordion:after{
+    /*content: '\02795';*/
+    content: '\25be';
+    font-size: 20px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+    border: none;
+}
+.active:after{
+    /*content: '\02796';*/
+    content: '\25b4';
+}
+
+.active, .accordion:hover {
+    background-color: #5c1111; 
+}
+
+
+.panel {
+    padding: 0 18px;
+    /*display: none;*/
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
 }

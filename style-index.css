@@ -68,12 +68,13 @@ p{
   float: right;
   color: white;
   padding-left: 4%;
+  width: 50%;;
 }
 .p2aboutpage{
   float: left;
   color:white;
   /*margin: 0% 0% 0% 2%;*/
-  width: 40%;
+  /*width:60%;*/
 }
 
 .ruimte{
@@ -89,10 +90,10 @@ p{
 }
 .aboutpicture{
   padding: 3% 30% 3% 3%;
-  /*margin: 2% 20% 0% 0;*/
+  margin: 2% 20% 0% 0;
   background-color: #510551;
-  width: 80%;
-  height: 500px;
+  /*width: 80%;
+  height: 500px;*/
 }
 .hometext{
   padding: 3%;
@@ -185,6 +186,8 @@ body, html {
 }
 
 
+
+
 #Home {
   background-color: #630863c7;
   height: fit-content;
@@ -260,4 +263,44 @@ body, html {
   /*width: 100vw;*/
   float:none;
   display: inline-block;
+}
+/* de informatie in buttons hieronder */
+.buttons {
+  background-color: #5a165a;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+.buttons:after{
+  /*content: '\02795';*/
+  content: '\25be';
+  font-size: 20px;
+  color: white;
+  float: center;
+  margin-left: 5px;
+  border: none;
+}
+.active:after{
+  /*content: '\02796';*/
+  content: '\25b4';
+}
+
+.active, .buttons:hover {
+  background-color: #510551; 
+}
+
+
+.panel {
+  padding: 0 18px;
+  /*display: none;*/
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
 }

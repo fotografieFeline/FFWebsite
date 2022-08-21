@@ -14,16 +14,41 @@
     </div>
     <div style="display:flex;">
       <div class="picturehor">
-          <img src="./img/shop/Passiflore.jpg" height="350">
+          <img src="./img/Passiflore.jpg" height="350">
     </div>
     <div class="info">
-        <p>
-            Je kunt deze foto uit laten printen op;<br>
-            -Canvas, met eventueel een lijst eromheen<br>
-            -Acrylglas<br>
-            -Aluminium, mat of glanzend<br>
-            Perfect voor aan de muur.
-          </p>
+        <button class="accordion">Canvas</button>
+        <div class="panel">
+            <h3>Foto uitgeprint op canvas.</h3>
+            <p>
+                Geen lijst:<br>
+                60x40 cm: €52,95<br>
+                30x20 cm: €42,95<br><br><br>
+                Met lijst: +€12<br>
+            </p>
+            <img src="./img/canvas.PNG">
+        </div>
+
+        <button class="accordion">Acrylglas</button>
+        <div class="panel">
+            <h3>Foto uitgeprint op acrylglas.</h3>
+            <p>
+                60x40 cm: €129,95<br>
+                30x20 cm: €58,95<br><br><br>
+            </p>
+            <img src="./img/acrylglas.PNG" style="padding-bottom: 3%;">
+        </div>
+
+        <button class="accordion">Aluminium</button>
+        <div class="panel">
+            <h3>Foto uitgeprint op aluminium.</h3>
+            <p>
+                Mat/glanzend:<br>
+                60x40 cm: €62,95<br>
+                30x20 cm: €52,95<br><br><br>
+            </p>
+            <img src="./img/aluminium.PNG" width="50%">
+        </div>
           <div>
             <a href="mailto:fotografieFeline<fotografie.feline21%40gmail%2ecom>?SUBJECT=Foto%20order%20Passiflore&BODY=Thank%20you%20for%20your%20order!%0D%0AType%20down%20here%20if%20you%20want%20the%20foto%20printed%20on%20canvas,%20acrylglas%20or%20aluminium.%20And%20add%20your%20variations.%0D%0A%0D%0AName%3A%0D%0AAdress%3A%0D%0AZip%20code%3A%0D%0ACity%3A%0D%0ACountry%3A%20The%20Netherlands%20(we%20only%20ship%20to%20The%20Netherlands%20for%20now)%0D%0A%0D%0AType%20your%20message%20down%20here%3A%0D%0A%0D%0A%0D%0A%0D%0AWe%20will%20come%20back%20to%20you%20as%20soon%20as%20possible%20about%20your%20order.%0D%0A%0D%0AWith%20kind%20regards,%0D%0A" style="text-decoration:none;">
                 <button class="order__button">
@@ -36,7 +61,23 @@
     </div>
 
 
-
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+        });
+    
+        }
+    </script>
 
 
 </body>
